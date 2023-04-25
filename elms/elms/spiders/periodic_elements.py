@@ -17,7 +17,7 @@ class PeriodicElementsSpider(scrapy.Spider):
             ]
 
         ))
-    def parse(self, response):
+    async def parse(self, response):
 
         for element in response.css("div.ptable div.element"):
 
